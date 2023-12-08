@@ -1,0 +1,60 @@
+.articles{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.articles__card{
+    width: 500px;
+    height: 500px;
+    background-color: #e1aa16;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.articles__card > img{
+    width: 100%;
+    height: 250px;
+}
+
+.articles__card h3 {
+    font-size: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.articles__card p{
+    font-size: 16px;
+    padding:0 30px;
+    text-align: center;
+}
+
+.settings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.settings > button{
+   padding: 10px 50px;
+   border: none;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.delete-btn{
+    background-color: rgb(184, 4, 4);
+    transition: 0.2s;
+}
+
+.edit-btn{
+    transition: 0.2s;
+    background-color: green;
+}
+
+.delete-btn:active, .edit-btn:active{
+    transform: scale(0.9);
+}
